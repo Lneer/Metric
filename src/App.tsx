@@ -6,7 +6,7 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
   const [height, setHeight] = useState(50)
-
+  const ya = ((window as unknown) as { ym: (...args: unknown[]) => void }).ym
   return (
     <>
       <div>
@@ -36,6 +36,8 @@ function App() {
           }}>
           count is {count}
         </button>
+
+        <input type='button' onClick={() => ya('98131758', 'reachGoal', 'lookThisSile')} value="Заказать"/>
       </div>
     </>
   )
