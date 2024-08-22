@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-  const [height, setHeight] = useState(30)
+  const [height, setHeight] = useState(50)
 
   return (
     <>
@@ -21,11 +21,11 @@ function App() {
       <div 
       style={{height}}
         className='changeHeightEl'
-        onClick={() => setHeight(150*Math.random() + 30)} >Random height element</div>
+        onClick={() => setHeight(150*Math.random() + 50)} >Random height element</div>
       <div className="card">
         <button onClick={() => {
           setCount((count) => count + 1)
-          setHeight(150*Math.random() + 30)
+          setHeight(150*Math.random() + 50)
           }}>
           count is {count}
         </button>
