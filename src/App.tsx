@@ -30,6 +30,12 @@ function App() {
           }}>
           count is {count}
         </button>
+        <button onClick={() => {
+          setCount((count) => count + 1)
+          setHeight(150*Math.random() + 50)
+          }}>
+          count is {count}
+        </button>
       </div>
     </>
   )
