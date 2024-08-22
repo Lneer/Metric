@@ -37,6 +37,7 @@ function App() {
           count is {count}
         </button>
 
+        <input type='button' onClick={()=> {}} value="Fake"/>
         <input type='button' onClick={() => ya('98131758', 'reachGoal', 'lookThisSile')} value="Заказать"/>
       </div>
     </>
